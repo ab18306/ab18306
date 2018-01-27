@@ -1,0 +1,128 @@
+<html> 
+
+<head>
+
+	<link type="text/css" rel="stylesheet" href="C:\Users\ab18306\Desktop\STEM Coding\Sublime\main.css" />
+
+
+	<title>My STEM Website</title> 
+	<script>
+function banner(){ 
+var text = confirm("Do you really want to go to Google.com?"); 
+return text; 
+}
+function answer() {
+	var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = "";
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "Great Job!" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;//end for loop
+}
+	</script>
+</head>
+
+<body id="body">
+	<center>
+	<center>
+		
+
+<a href="https://www.google.com/" onclick="return banner()">
+	<header id="header"> <center><b>This is a website about Math.</b>
+	</center></header>
+</a>
+	
+	 
+<marquee id="scroll"> Math </marquee>
+<audio width="200" height="220" controls>
+	<source
+	src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio>
+<nav> <div id="links"><ul id="navmenu">
+		<li class="navitem"> <a href="C:\Users\ab18306\Desktop\index_revisited.html">Home </a> </li>
+		<li class="navitem"> <a href="C:\Users\ab18306\Desktop\STEM Coding\Sublime\comingsoon.html"> Contact Info </li>
+		<li class="navitem"> <a href="C:\Users\ab18306\Desktop\STEM Coding\Sublime\comingsoon.html">Fun Facts! </a></li>
+		</ul>
+	</div>
+	 </nav>
+<p> <i>Math</i> is a <b>great</b> thing. <span class="wrap-text">It may be difficult, but any job you get in the future will involve some kind of math.</span>This is why it is so important to learn in school! There is an <mark><u>endless</u> fountain</mark> of knowledge to learn from this school subject. </p>
+
+	<div id="rightside">
+		
+		<div class ="listitem">
+			<ol>
+	
+	<li> You will always have something to learn</li>
+	<li>Any job you get will involve Math</li>
+	<li>It can be fun if you learn it correctly!</li>
+</div>
+	 	<div class="wrap-trivia">
+	<center><h2> Math Trivia Question: </h2>
+
+	<p class="trivia"> When was math first known to be used? </p>
+
+	<form>
+		<div id="response"> </div>
+
+<input type="radio" name="trivia" value="Great Job!">1650 BC<br>
+
+<input type="radio" name="trivia"
+value="So close!">1500 BC<br>
+
+<input type="radio" name="trivia"
+value="Almost!">before 100 BC<br>
+
+<input type="radio" name="trivia"
+value="Little less!">1868<br>
+
+<input type="button"
+value ="Check" id="button"
+onclick="answer()">
+</center>
+
+	</form>
+</div>
+<div id="img2">
+	<img src=""/>
+</div>
+	 	
+	 </div>
+
+<div id="leftside">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/nejqy_xIvJM" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+<center>
+<div id="img1">
+<img src="http://www.aspiresa.com/wp-content/uploads/2014/07/Math-title.jpg"/>
+</div>
+</div>
+<br>
+
+</center>
+
+<div id="bottom">
+
+<center>
+	<div id="center">
+	<img src="http://swunmath.com/wp-content/uploads/2017/07/261934-math-symbols-1.png">
+</div>
+
+	<hr>
+
+<center> Arick Bird </center>
+	
+	<center> <a href="https://www.mathplayground.com/">A fun Math Website!</a>
+</ol>
+</center>
+<footer id="footer"> <center><b> Created By: Arick Bird</b></center> </footer>
+</center>
+</body> 
+</div>
+</html>
